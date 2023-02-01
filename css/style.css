@@ -42,12 +42,22 @@ h1 {
 
 form {
     float: left;
+    display: grid;
+    grid-template-columns: 5fr 5fr 5fr;  
 }
 
 label {
     float: left;
     color: #000;
     font-size: 1.5rem;
+    grid-column: 1 / 2;
+    height: 2em;
+}
+
+input {
+    grid-column: 2 / 3;
+    height: 2em;
+    width: 160%;
 }
 
 .signature {
@@ -63,9 +73,10 @@ button {
     cursor: pointer;
     font-size: 18px;
     background-color: #ff4d4d;
-    padding: 5px 20px;
     position: relative;
     width: 70%;
+    grid-column: 2 / 4;
+    height: 2em;
 }
 
 button:hover {
