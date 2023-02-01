@@ -1,12 +1,14 @@
-/* jshint esversion: 6 */
+const saveButton = document.querySelector('')
 
-function function_name() {
-	'use strict';
-}
+const book = document.createElement('div')
+const title = document.createElement('p')
+const author = document.createElement('p')
+const genre = document.createElement('p')
+const isbn = document.createElement('p')
 
-function init() {
-	'use strict';
-	
-}
+book.classList.add('book')
 
-window.onload = init;
+book.appendChild(title)
+book.appendChild(author)
+book.appendChild(genre)
+book.appendChild(isbn)
